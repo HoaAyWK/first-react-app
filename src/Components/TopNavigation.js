@@ -3,7 +3,6 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem
 } from 'reactstrap';
@@ -17,9 +16,11 @@ function TopNavigation(props) {
     const toggle = () => setIsOpen(!isOpen);
     return <div>
         <Navbar color="light" light expand="md" >
-            <NavbarBrand className={classes.navbrand}>
-                <Link to='/' className={classes.link} >Home</Link>
-            </NavbarBrand>
+            <Nav>
+                <NavItem className={classes.navbrand}>
+                    <Link className={classes.link} to='/' >Home</Link>
+                </NavItem>
+            </Nav>             
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
