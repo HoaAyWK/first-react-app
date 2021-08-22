@@ -1,0 +1,12 @@
+.navbrand {
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+}
+
+.navitem {
+    margin: 5px;
+}
+
+.link {
+    text-decoration: none;
+}
