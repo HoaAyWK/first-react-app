@@ -11,3 +11,8 @@
 .link {
     text-decoration: none;
 }
+
+.mybadge {
+    margin-left: 5px;
+    background-color: blue;
+}
