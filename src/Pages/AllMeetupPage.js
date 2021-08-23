@@ -39,7 +39,8 @@ function AllMeetupPage() {
         return (
           <Col sm="6" md="4" key={index}>
             <MeetupCard 
-              key={meetup.id}             
+              key={meetup.id}
+              id={meetup.id}             
               title={meetup.title}
               description={meetup.description}
               imgPath={meetup.imgPath}
